@@ -1,0 +1,85 @@
+body {
+	background-color: #f5efe6;
+	color: #283c46;
+	max-width: 800px;
+	margin: 1rem auto;
+}
+
+.card {
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+	border-radius: 0.6rem;
+
+	padding: 1rem;
+	margin-bottom: 1rem;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	grid-template-areas:
+		'date day-menu'
+		'tasks tasks'
+		'time day-hrs'
+		'labor-class labor-class';
+}
+
+.task {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0.5rem;
+	grid-template-areas:
+		'time task-menu'
+		'description description'
+		'labor-class task-hrs';
+	margin: 0.5rem 0 0;
+	padding: 0 0 0.5rem;
+	border-bottom: 1px solid #f2f2f2;
+	}
+
+
+.date {
+	grid-area: date;
+	}
+
+.day-menu {
+	grid-area: day-menu;
+	justify-self: end;
+	}
+
+.task-menu {
+	grid-area: task-menu;
+	justify-self: end;
+	}
+
+.tasks {
+	grid-area: tasks;
+	}
+
+.description {
+	grid-area: description;
+	font-size: 1.125em;
+	}
+
+.time {
+	grid-area: time;
+	color: #7f7f7f;
+	}
+
+.day-hrs {
+	grid-area: day-hrs;
+	justify-self: end;
+}
+
+
+.task-hrs {
+	grid-area: task-hrs;
+	justify-self: end;
+}
+
+.labor-class {
+	grid-area: labor-class;
+	font-size: 0.75em;
+	color: #a6a6a6;
+	}
+
+/* #aa9c84 */
